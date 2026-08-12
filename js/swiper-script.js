@@ -73,3 +73,34 @@ $(function () {
     });
 
 });
+
+$(function () {
+    var swiperServicesEl = document.querySelector('.swiperServices');
+    if (swiperServicesEl) {
+        new Swiper('.swiperServices', {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+            loop: false,
+            grabCursor: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 24,
+                },
+            },
+            pagination: {
+                enabled: true,
+                el: '.services-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+    }
+});
