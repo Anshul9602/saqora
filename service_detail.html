@@ -16,15 +16,14 @@
     <!-- Header -->
     <div class="bg-text-color py-3">
         <div class="r-container top-bar-scroll">
-            <div
-                class="top-bar-items d-flex flex-xl-row flex-row flex-nowrap justify-content-xl-between justify-content-start text-white align-items-center font-2">
+            <div class="top-bar-items d-flex flex-xl-row flex-row flex-nowrap justify-content-xl-between justify-content-start text-white align-items-center font-2">
                 <span class="d-flex flex-row align-items-center gap-2">
                     <i class="rtmicon rtmicon-location text-white"></i>
                     30 N Gould St. Ste R, Sheridan, WY, 82801, USA
                 </span>
                 <span class="d-flex flex-row align-items-center gap-2">
                     <i class="rtmicon rtmicon-envelope text-white"></i>
-                    info@saqoraglobal.com
+                    <a href="mailto:info@saqoraglobal.com" class="text-white text-decoration-none">info@saqoraglobal.com</a>
                 </span>
             </div>
         </div>
@@ -40,7 +39,7 @@
                         <i class="fa-solid fa-bars-staggered accent-color-2"></i>
                     </button>
                     <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
-                                                <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
@@ -63,9 +62,6 @@
                                 <a class="nav-link" href="why-choose-us.html">Why Choose Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html#international-business">International Services</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
@@ -76,62 +72,54 @@
         </div>
     </header>
 
-    <div class="offcanvas offcanvas-end mobile-nav-offcanvas" tabindex="-1" id="mobileNav"
-                    aria-labelledby="mobileNavLabel">
-                    <div class="offcanvas-header">
-                        <a href="index.html" class="mobile-nav-brand">
-                            <img src="image/logo.png" alt="Saqora Global Services Inc" class="img-fluid">
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-flex flex-column">
-                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="index.html">Home</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="about.html">About Us</a>
-                                                    </li>
-                                                    <li class="nav-item dropdown">
-                                                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="services.html#income-tax">Income Tax Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#gst-services">GST Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#business-registration">Business Registration</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#international-business">International Business Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#additional-services">Additional Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#it-recruitment">IT &amp; Recruitment Consulting</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#healthcare-medical">Healthcare &amp; Medical Services</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="why-choose-us.html">Why Choose Us</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="services.html#international-business">International Services</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="contact.html">Contact Us</a>
-                                                    </li>
-                                                </ul>
-                    </div>
-                </div>
+    <div class="offcanvas offcanvas-end mobile-nav-offcanvas" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header">
+            <a href="index.html" class="mobile-nav-brand">
+                <img src="image/logo.png" alt="Saqora Global Services Inc" class="img-fluid">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="services.html#income-tax">Income Tax Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#gst-services">GST Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#business-registration">Business Registration</a></li>
+                        <li><a class="dropdown-item" href="services.html#international-business">International Business Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#additional-services">Additional Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#it-recruitment">IT &amp; Recruitment Consulting</a></li>
+                        <li><a class="dropdown-item" href="services.html#healthcare-medical">Healthcare &amp; Medical Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="why-choose-us.html">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- End Header -->
 
     <!-- Main -->
     <main>
         <!-- Banner -->
-        <div class="section position-relative"
-            style="background-image: url(image/image-1920x1280-8.jpg); height: 70vh;">
+        <div class="section position-relative" style="background-image: url(image/image-1920x1280-8.jpg); height: 70vh;">
             <div class="bg-overlay"></div>
             <div class="r-container h-100 position-relative" style="z-index: 2;">
-                <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3"
-                    style="max-width: 895px;">
+                <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3" style="max-width: 895px;">
                     <h2 class="font-1 m-0 text-white fw-bold">Service Detail</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Service Detail</li>
                         </ol>
                     </nav>
@@ -188,9 +176,10 @@
                             </div>
                             <div class="mb-3">
                                 <p>
-                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Nulla facilisi morbi
-                                    tempus iaculis urna. Morbi tempus iaculis urna id volutpat lacus laoreet non
-                                    curabitur. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.
+                                    Our team works closely with you to understand your financial situation, identify
+                                    opportunities for tax savings, and ensure every return is filed accurately and on time.
+                                    Whether you are an individual taxpayer or a growing business, we provide clear guidance
+                                    and dependable support throughout the process.
                                 </p>
                             </div>
                         </div>
@@ -200,72 +189,65 @@
                             <div class="p-5 d-flex flex-column gap-3 bg-accent rounded-3">
                                 <ul class="list-group gap-3">
                                     <li class="list-group-item border-0 p-0">
-                                        <a href=""
-                                            class="link d-flex flex-row align-items-center gap-3 py-3">
+                                        <a href="services.html#income-tax" class="link d-flex flex-row align-items-center gap-3 py-3">
                                             <i class="rtmicon rtmicon-chevron-circle-right fs-4 accent-color fw-bold"></i>
-                                            <h4 class="font-1 m-0">Tax planning</h4>
+                                            <h4 class="font-1 m-0">Income Tax Services</h4>
                                         </a>
                                     </li>
                                     <li class="list-group-item border-0 p-0">
-                                        <a href=""
-                                            class="link d-flex flex-row align-items-center gap-3 py-3">
+                                        <a href="services.html#gst-services" class="link d-flex flex-row align-items-center gap-3 py-3">
                                             <i class="rtmicon rtmicon-chevron-circle-right fs-4 accent-color fw-bold"></i>
-                                            <h4 class="font-1 m-0">Audit services</h4>
+                                            <h4 class="font-1 m-0">GST Services</h4>
                                         </a>
                                     </li>
                                     <li class="list-group-item border-0 p-0">
-                                        <a href=""
-                                            class="link d-flex flex-row align-items-center gap-3 py-3">
+                                        <a href="services.html#business-registration" class="link d-flex flex-row align-items-center gap-3 py-3">
                                             <i class="rtmicon rtmicon-chevron-circle-right fs-4 accent-color fw-bold"></i>
-                                            <h4 class="font-1 m-0">Bookkeeping</h4>
+                                            <h4 class="font-1 m-0">Business Registration</h4>
                                         </a>
                                     </li>
                                     <li class="list-group-item border-0 p-0">
-                                        <a href=""
-                                            class="link d-flex flex-row align-items-center gap-3 py-3">
+                                        <a href="services.html#it-recruitment" class="link d-flex flex-row align-items-center gap-3 py-3">
                                             <i class="rtmicon rtmicon-chevron-circle-right fs-4 accent-color fw-bold"></i>
-                                            <h4 class="font-1 m-0">Payroll processing</h4>
+                                            <h4 class="font-1 m-0">IT &amp; Recruitment</h4>
                                         </a>
                                     </li>
                                     <li class="list-group-item border-0 p-0">
-                                        <a href=""
-                                            class="link d-flex flex-row align-items-center gap-3 py-3">
+                                        <a href="services.html#international-business" class="link d-flex flex-row align-items-center gap-3 py-3">
                                             <i class="rtmicon rtmicon-chevron-circle-right fs-4 accent-color fw-bold"></i>
-                                            <h4 class="font-1 m-0">Financial Statement</h4>
+                                            <h4 class="font-1 m-0">International Business</h4>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="position-relative overflow-hidden rounded-3"
-                                style="background-image: url(image/image-1920x1280-5.jpg); background-size: cover; background-position: center;">
+                            <div class="position-relative overflow-hidden rounded-3" style="background-image: url(image/image-1920x1280-5.jpg); background-size: cover; background-position: center;">
                                 <div class="bg-overlay"></div>
                                 <div class="position-relative p-5" style="z-index: 2;">
-                                    <div
-                                        class="d-flex flex-column mx-auto text-center align-items-center text-white gap-3">
+                                    <div class="d-flex flex-column mx-auto text-center align-items-center text-white gap-3">
                                         <h4 class="font-1 text-white fw-semibold">Achieve Financial Freedom
                                             Book a Free Assessment Now!</h4>
                                         <p class="text-white">We specialize in providing comprehensive financial services.</p>
-                                            <div class="w-max-content">
-                                                <a href="contact.html" class="btn btn-accent rounded-2 d-flex flex-row gap-2 px-5 py-3">
-                                                    Contact Us
-                                                </a>
-                                            </div>
+                                        <div class="w-max-content">
+                                            <a href="contact.html" class="btn btn-accent rounded-2 d-flex flex-row gap-2 px-5 py-3">
+                                                Contact Us
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-column gap-3 mt-3">
                                 <h5>Follow Us On:</h5>
                                 <div class="social-container team mb-xl-0 mb-3 gap-2">
-                                    <a href="https://www.facebook.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Facebook">
                                         <i class="fa-brands fa-xs fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.twitter.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Twitter">
                                         <i class="fa-brands fa-xs fa-twitter"></i>
                                     </a>
-                                    <a href="https://www.instagram.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Instagram">
                                         <i class="fa-brands fa-xs fa-instagram"></i>
                                     </a>
-                                    <a href="https://www.youtube.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="YouTube">
                                         <i class="fa-brands fa-xs fa-youtube"></i>
                                     </a>
                                 </div>
@@ -286,22 +268,22 @@
                         <div class="col col-xl-4 mb-3">
                             <div class="d-flex flex-column gap-3 pe-xl-5">
                                 <img src="image/logo.png" alt="Saqora Global Services Inc" class="img-fluid site-logo">
-                                                                <p>
+                                <p>
                                     <strong>Saqora Global Services Inc</strong><br>
                                     Compliance | Growth | Trust<br><br>
                                     Your Success is Our Commitment. Let's build a better tomorrow, together.
                                 </p>
                                 <div class="social-container mb-xl-0">
-                                    <a href="https://www.facebook.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Facebook">
                                         <i class="fa-brands fa-xs fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.twitter.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Twitter">
                                         <i class="fa-brands fa-xs fa-twitter"></i>
                                     </a>
-                                    <a href="https://www.instagram.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Instagram">
                                         <i class="fa-brands fa-xs fa-instagram"></i>
                                     </a>
-                                    <a href="https://www.youtube.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="YouTube">
                                         <i class="fa-brands fa-xs fa-youtube"></i>
                                     </a>
                                 </div>
@@ -314,7 +296,7 @@
                                         <div class="pb-2 w-max-content border-bottom border-accent-2">
                                             <h5 class="font-1 accent-color">Navigation</h5>
                                         </div>
-                                                                                <ul class="list ps-0 gap-2 accent-color">
+                                        <ul class="list ps-0 gap-2 accent-color">
                                             <li><a href="index.html" class="link d-flex flex-row gap-3 align-items-center">Home</a></li>
                                             <li><a href="about.html" class="link d-flex flex-row gap-3 align-items-center">About Us</a></li>
                                             <li><a href="services.html" class="link d-flex flex-row gap-3 align-items-center">Services</a></li>
@@ -329,7 +311,7 @@
                                         <div class="pb-2 w-max-content border-bottom border-accent-2">
                                             <h5 class="font-1 accent-color">Our Services</h5>
                                         </div>
-                                                                                <ul class="list ps-0 gap-2 accent-color">
+                                        <ul class="list ps-0 gap-2 accent-color">
                                             <li><a href="services.html#income-tax" class="link">Income Tax Services</a></li>
                                             <li><a href="services.html#gst-services" class="link">GST Services</a></li>
                                             <li><a href="services.html#business-registration" class="link">Business Registration</a></li>
@@ -356,7 +338,7 @@
                                                 <div class="contact-item">
                                                     <i class="rtmicon rtmicon-envelope fs-4"></i>
                                                 </div>
-                                                info@saqoraglobal.com
+                                                <a href="mailto:info@saqoraglobal.com" class="text-black text-decoration-none">info@saqoraglobal.com</a>
                                             </span>
                                         </div>
                                     </div>

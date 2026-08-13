@@ -883,8 +883,116 @@ header.sticky-top .navbar-collapse {
     }
 }
 
+.about-stats-panel h3 sup {
+    font-size: 0.38em;
+    line-height: 0;
+    position: relative;
+    top: -0.45em;
+    vertical-align: baseline;
+}
+
+a.social-item[href=""],
+a.social-item-2[href=""] {
+    pointer-events: none;
+    cursor: default;
+}
+
+.card-link-block {
+    color: inherit;
+    display: block;
+}
+
+.card-link-block:hover {
+    color: inherit;
+}
+
+.card-link-block .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link-block:hover .card {
+    transform: translateY(-4px);
+}
+
+.service-scroll-anchor {
+    display: block;
+    height: 0;
+    scroll-margin-top: 140px;
+}
+
 .service-detail-card {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 140px;
+}
+
+.card.card-service,
+.card.why-card,
+.card.img-hover.h-100.shadow:not(.border-0):not(.card-outline-hover),
+.featured-core-row > .col > .card,
+.swiperServices .card.card-service {
+    border: 2px solid var(--accent-color) !important;
+}
+
+.card.card-service > .d-flex.flex-column,
+.card.why-card > .d-flex.flex-column,
+.card.img-hover.h-100.shadow > .d-flex.flex-column.gap-3 {
+    text-align: center;
+    align-items: center;
+}
+
+.card.card-service p,
+.card.why-card p,
+.card.img-hover.h-100.shadow > .d-flex.flex-column.gap-3 p {
+    text-align: center;
+}
+
+.number-text sup {
+    font-size: 0.38em;
+    line-height: 0;
+    position: relative;
+    top: -0.45em;
+    vertical-align: baseline;
+}
+
+.about-stats-row .number-text {
+    min-height: 1.1em;
+    line-height: 1.05;
+    margin-bottom: 0.75rem;
+    font-size: 2.4rem;
+}
+
+.btn-hero-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.35s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-hero-secondary:hover,
+.btn-hero-secondary:focus {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--brand-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-banner-row {
+        align-items: center;
+    }
+
+    .hero-social-sidebar {
+        justify-content: flex-end !important;
+        padding-right: 0.5rem;
+    }
+
+    header .navbar .container-fluid {
+        padding-right: 1rem;
+    }
 }
 
 .service-detail-card ul li {
@@ -973,7 +1081,7 @@ header.sticky-top .navbar-collapse {
 }
 
 .btn-accent {
-    background-color: var(--accent-color);
+    background-color: var(--brand-navy);
     color: white;
     transition: all 0.5s;
     border: 1px solid transparent;
@@ -981,8 +1089,8 @@ header.sticky-top .navbar-collapse {
 
 .btn-accent:hover {
     background-color: transparent;
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: var(--brand-navy);
+    color: var(--brand-navy);
 }
 
 .btn-accent-outline {

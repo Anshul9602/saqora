@@ -39,6 +39,24 @@ $(function () {
 
     initTopBarMarquee();
 
+    function scrollToHashTarget() {
+        if (!window.location.hash) {
+            return;
+        }
+
+        var target = document.querySelector(window.location.hash);
+        if (!target) {
+            return;
+        }
+
+        var headerOffset = 140;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: top, behavior: 'auto' });
+    }
+
+    scrollToHashTarget();
+    window.addEventListener('hashchange', scrollToHashTarget);
+
     var mobileNav = document.getElementById('mobileNav');
     if (mobileNav) {
         mobileNav.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item').forEach(function (link) {

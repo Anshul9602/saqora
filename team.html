@@ -16,15 +16,14 @@
     <!-- Header -->
     <div class="bg-text-color py-3">
         <div class="r-container top-bar-scroll">
-            <div
-                class="top-bar-items d-flex flex-xl-row flex-row flex-nowrap justify-content-xl-between justify-content-start text-white align-items-center font-2">
+            <div class="top-bar-items d-flex flex-xl-row flex-row flex-nowrap justify-content-xl-between justify-content-start text-white align-items-center font-2">
                 <span class="d-flex flex-row align-items-center gap-2">
                     <i class="rtmicon rtmicon-location text-white"></i>
                     30 N Gould St. Ste R, Sheridan, WY, 82801, USA
                 </span>
                 <span class="d-flex flex-row align-items-center gap-2">
                     <i class="rtmicon rtmicon-envelope text-white"></i>
-                    info@saqoraglobal.com
+                    <a href="mailto:info@saqoraglobal.com" class="text-white text-decoration-none">info@saqoraglobal.com</a>
                 </span>
             </div>
         </div>
@@ -40,7 +39,7 @@
                         <i class="fa-solid fa-bars-staggered accent-color-2"></i>
                     </button>
                     <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
-                                                <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
@@ -63,9 +62,6 @@
                                 <a class="nav-link" href="why-choose-us.html">Why Choose Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html#international-business">International Services</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
@@ -76,62 +72,54 @@
         </div>
     </header>
 
-    <div class="offcanvas offcanvas-end mobile-nav-offcanvas" tabindex="-1" id="mobileNav"
-                    aria-labelledby="mobileNavLabel">
-                    <div class="offcanvas-header">
-                        <a href="index.html" class="mobile-nav-brand">
-                            <img src="image/logo.png" alt="Saqora Global Services Inc" class="img-fluid">
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-flex flex-column">
-                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="index.html">Home</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" href="about.html">About Us</a>
-                                                    </li>
-                                                    <li class="nav-item dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="services.html#income-tax">Income Tax Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#gst-services">GST Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#business-registration">Business Registration</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#international-business">International Business Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#additional-services">Additional Services</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#it-recruitment">IT &amp; Recruitment Consulting</a></li>
-                                                            <li><a class="dropdown-item" href="services.html#healthcare-medical">Healthcare &amp; Medical Services</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="why-choose-us.html">Why Choose Us</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="services.html#international-business">International Services</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="contact.html">Contact Us</a>
-                                                    </li>
-                                                </ul>
-                    </div>
-                </div>
+    <div class="offcanvas offcanvas-end mobile-nav-offcanvas" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header">
+            <a href="index.html" class="mobile-nav-brand">
+                <img src="image/logo.png" alt="Saqora Global Services Inc" class="img-fluid">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="services.html#income-tax">Income Tax Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#gst-services">GST Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#business-registration">Business Registration</a></li>
+                        <li><a class="dropdown-item" href="services.html#international-business">International Business Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#additional-services">Additional Services</a></li>
+                        <li><a class="dropdown-item" href="services.html#it-recruitment">IT &amp; Recruitment Consulting</a></li>
+                        <li><a class="dropdown-item" href="services.html#healthcare-medical">Healthcare &amp; Medical Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="why-choose-us.html">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- End Header -->
 
     <!-- Main -->
     <main>
         <!-- Banner -->
-        <div class="section position-relative"
-            style="background-image: url(image/image-1920x1280-10.jpg); height: 70vh;">
+        <div class="section position-relative" style="background-image: url(image/image-1920x1280-10.jpg); height: 70vh;">
             <div class="bg-overlay"></div>
             <div class="r-container h-100 position-relative" style="z-index: 2;">
-                <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3"
-                    style="max-width: 895px;">
+                <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3" style="max-width: 895px;">
                     <h2 class="font-1 m-0 text-white fw-bold">Our Team</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Our Team</li>
                         </ol>
                     </nav>
@@ -154,62 +142,37 @@
                     <div class="row row-cols-xl-3 row-cols-1 g-3">
                         <div class="col mb-3">
                             <img src="image/image-900x900-17.jpg" alt="image" class="img-fluid rounded-top-3 w-100">
-                            <div
-                                class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
+                            <div class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
                                 <div class="mb-2">
                                     <h5>Ryan Collin</h5>
                                     <span class="font-2">Senior Accountant</span>
-                                </div>
-                                <div class="social-container team gap-2">
-                                    <a href="https://www.facebook.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://www.twitter.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-instagram"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-3">
                             <img src="image/image-900x900-16.jpg" alt="image" class="img-fluid rounded-top-3 w-100">
-                            <div
-                                class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
+                            <div class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
                                 <div class="mb-2">
                                     <h5>Rihanna Cloudy</h5>
                                     <span class="font-2">Budget Analyst</span>
-                                </div>
-                                <div class="social-container team gap-2">
-                                    <a href="https://www.facebook.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://www.twitter.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-instagram"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-3">
                             <img src="image/image-900x900-15.jpg" alt="image" class="img-fluid rounded-top-3 w-100">
-                            <div
-                                class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
+                            <div class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
                                 <div class="mb-2">
                                     <h5>Abraham Deanz</h5>
                                     <span class="font-2">Tax Expert</span>
                                 </div>
                                 <div class="social-container team gap-2">
-                                    <a href="https://www.facebook.com" class="social-item">
+                                    <a href="" class="social-item" aria-label="Facebook">
                                         <i class="fa-brands fa-xs fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.twitter.com" class="social-item">
+                                    <a href="" class="social-item" aria-label="Twitter">
                                         <i class="fa-brands fa-xs fa-twitter"></i>
                                     </a>
-                                    <a href="https://www.instagram.com" class="social-item">
+                                    <a href="" class="social-item" aria-label="Instagram">
                                         <i class="fa-brands fa-xs fa-instagram"></i>
                                     </a>
                                 </div>
@@ -219,62 +182,37 @@
                     <div class="row row-cols-xl-3 row-cols-1 g-3">
                         <div class="col mb-3">
                             <img src="image/image-900x900-13.jpg" alt="image" class="img-fluid rounded-top-3 w-100">
-                            <div
-                                class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
+                            <div class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
                                 <div class="mb-2">
                                     <h5>Jessica Robinson</h5>
                                     <span class="font-2">Accountant</span>
-                                </div>
-                                <div class="social-container team gap-2">
-                                    <a href="https://www.facebook.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://www.twitter.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-instagram"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-3">
                             <img src="image/image-900x900-12.jpg" alt="image" class="img-fluid rounded-top-3 w-100">
-                            <div
-                                class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
+                            <div class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
                                 <div class="mb-2">
                                     <h5>Jacob Robert</h5>
                                     <span class="font-2">Financial Manager</span>
-                                </div>
-                                <div class="social-container team gap-2">
-                                    <a href="https://www.facebook.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://www.twitter.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com" class="social-item">
-                                        <i class="fa-brands fa-xs fa-instagram"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-3">
                             <img src="image/image-900x900-14.jpg" alt="image" class="img-fluid rounded-top-3 w-100">
-                            <div
-                                class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
+                            <div class="bg-accent-color d-flex flex-column text-white p-4 align-items-center text-center rounded-bottom-3">
                                 <div class="mb-2">
                                     <h5>Arlene McCoy</h5>
                                     <span class="font-2">Budget Analyst</span>
                                 </div>
                                 <div class="social-container team gap-2">
-                                    <a href="https://www.facebook.com" class="social-item">
+                                    <a href="" class="social-item" aria-label="Facebook">
                                         <i class="fa-brands fa-xs fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.twitter.com" class="social-item">
+                                    <a href="" class="social-item" aria-label="Twitter">
                                         <i class="fa-brands fa-xs fa-twitter"></i>
                                     </a>
-                                    <a href="https://www.instagram.com" class="social-item">
+                                    <a href="" class="social-item" aria-label="Instagram">
                                         <i class="fa-brands fa-xs fa-instagram"></i>
                                     </a>
                                 </div>
@@ -345,8 +283,7 @@
                                 needs of our clients.
                             </p>
                             <div class="w-max-content">
-                                <a href="services.html"
-                                    class="btn btn-accent rounded-2 d-flex flex-row gap-2 px-5 py-3">
+                                <a href="services.html" class="btn btn-accent rounded-2 d-flex flex-row gap-2 px-5 py-3">
                                     All Services
                                 </a>
                             </div>
@@ -375,8 +312,7 @@
                                     <div class=" d-flex flex-column gap-3 px-4 py-5">
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <div class="icon-box-2">
-                                                <i class="rtmicon rtmicon-taxation accent-color"
-                                                    style="font-size: 54px;"></i>
+                                                <i class="rtmicon rtmicon-taxation accent-color" style="font-size: 54px;"></i>
                                             </div>
                                             <h4 class="accent-color">Tax planning</h4>
                                         </div>
@@ -396,8 +332,7 @@
                                     <div class=" d-flex flex-column gap-3 px-4 py-5">
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <div class="icon-box-2">
-                                                <i class="rtmicon rtmicon-taxes accent-color"
-                                                    style="font-size: 54px;"></i>
+                                                <i class="rtmicon rtmicon-taxes accent-color" style="font-size: 54px;"></i>
                                             </div>
                                             <h4 class="accent-color">Audit services</h4>
                                         </div>
@@ -417,8 +352,7 @@
                                     <div class=" d-flex flex-column gap-3 px-4 py-5">
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <div class="icon-box-2">
-                                                <i class="rtmicon rtmicon-tax-law accent-color"
-                                                    style="font-size: 54px;"></i>
+                                                <i class="rtmicon rtmicon-tax-law accent-color" style="font-size: 54px;"></i>
                                             </div>
                                             <h4 class="accent-color">Tax strategy</h4>
                                         </div>
@@ -438,8 +372,7 @@
                                     <div class=" d-flex flex-column gap-3 px-4 py-5">
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <div class="icon-box-2">
-                                                <i class="rtmicon rtmicon-money-check accent-color"
-                                                    style="font-size: 54px;"></i>
+                                                <i class="rtmicon rtmicon-money-check accent-color" style="font-size: 54px;"></i>
                                             </div>
                                             <h4 class="accent-color">Bookkeeping</h4>
                                         </div>
@@ -470,22 +403,22 @@
                         <div class="col col-xl-4 mb-3">
                             <div class="d-flex flex-column gap-3 pe-xl-5">
                                 <img src="image/logo.png" alt="Saqora Global Services Inc" class="img-fluid site-logo">
-                                                                <p>
+                                <p>
                                     <strong>Saqora Global Services Inc</strong><br>
                                     Compliance | Growth | Trust<br><br>
                                     Your Success is Our Commitment. Let's build a better tomorrow, together.
                                 </p>
                                 <div class="social-container mb-xl-0">
-                                    <a href="https://www.facebook.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Facebook">
                                         <i class="fa-brands fa-xs fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.twitter.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Twitter">
                                         <i class="fa-brands fa-xs fa-twitter"></i>
                                     </a>
-                                    <a href="https://www.instagram.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="Instagram">
                                         <i class="fa-brands fa-xs fa-instagram"></i>
                                     </a>
-                                    <a href="https://www.youtube.com" class="social-item-2">
+                                    <a href="" class="social-item-2" aria-label="YouTube">
                                         <i class="fa-brands fa-xs fa-youtube"></i>
                                     </a>
                                 </div>
@@ -498,7 +431,7 @@
                                         <div class="pb-2 w-max-content border-bottom border-accent-2">
                                             <h5 class="font-1 accent-color">Navigation</h5>
                                         </div>
-                                                                                <ul class="list ps-0 gap-2 accent-color">
+                                        <ul class="list ps-0 gap-2 accent-color">
                                             <li><a href="index.html" class="link d-flex flex-row gap-3 align-items-center">Home</a></li>
                                             <li><a href="about.html" class="link d-flex flex-row gap-3 align-items-center">About Us</a></li>
                                             <li><a href="services.html" class="link d-flex flex-row gap-3 align-items-center">Services</a></li>
@@ -513,7 +446,7 @@
                                         <div class="pb-2 w-max-content border-bottom border-accent-2">
                                             <h5 class="font-1 accent-color">Our Services</h5>
                                         </div>
-                                                                                <ul class="list ps-0 gap-2 accent-color">
+                                        <ul class="list ps-0 gap-2 accent-color">
                                             <li><a href="services.html#income-tax" class="link">Income Tax Services</a></li>
                                             <li><a href="services.html#gst-services" class="link">GST Services</a></li>
                                             <li><a href="services.html#business-registration" class="link">Business Registration</a></li>
@@ -540,7 +473,7 @@
                                                 <div class="contact-item">
                                                     <i class="rtmicon rtmicon-envelope fs-4"></i>
                                                 </div>
-                                                info@saqoraglobal.com
+                                                <a href="mailto:info@saqoraglobal.com" class="text-black text-decoration-none">info@saqoraglobal.com</a>
                                             </span>
                                         </div>
                                     </div>
