@@ -962,8 +962,8 @@ a.social-item-2[href=""] {
 
 .btn-hero-secondary {
     background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #fff !important;
+    color: #fff !important;
     transition: all 0.35s ease;
     text-decoration: none;
     display: inline-flex;
@@ -973,9 +973,9 @@ a.social-item-2[href=""] {
 
 .btn-hero-secondary:hover,
 .btn-hero-secondary:focus {
-    background-color: #fff;
-    border-color: #fff;
-    color: var(--brand-navy);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -1087,10 +1087,11 @@ a.social-item-2[href=""] {
     border: 1px solid transparent;
 }
 
-.btn-accent:hover {
-    background-color: transparent;
-    border-color: var(--brand-navy);
-    color: var(--brand-navy);
+.btn-accent:hover,
+.btn-accent:focus {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
 }
 
 .btn-accent-outline {
@@ -1604,10 +1605,11 @@ a.social-item-2[href=""] {
     color: var(--primary);
 }
 
-.card.bg-accent-color .btn-accent:hover {
-    background-color: transparent;
-    border-color: var(--primary);
-    color: var(--primary);
+.card.bg-accent-color .btn-accent:hover,
+.card.bg-accent-color .btn-accent:focus {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
 }
 
 .card-accent {
@@ -1778,9 +1780,9 @@ a.social-item-2[href=""] {
 
 
 .card.card-pricing-hover:hover .btn-accent {
-    background-color: var(--accent-color-2);
-    border-color: var(--accent-color-2);
-    color: white;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
 }
 
 .card:hover .icon-box.bg-accent-color {
