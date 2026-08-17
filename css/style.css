@@ -1516,6 +1516,11 @@ a.social-item-2[href=""] {
     background-color: var(--accent-color);
 }
 
+.breadcrumb,
+nav[aria-label="breadcrumb"] {
+    display: none !important;
+}
+
 .breadcrumb {
     align-items: center;
     font-family: var(--font-2);
@@ -2672,6 +2677,35 @@ a.social-item-2[href=""] {
 }
 
 /* Contact page: full-width form on mobile */
+.phone-input-group {
+    display: flex;
+    width: 100%;
+}
+
+.phone-input-group .country-code-select {
+    flex: 0 0 auto;
+    min-width: 118px;
+    max-width: 132px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none;
+    padding-left: 0.85rem;
+    padding-right: 0.5rem;
+    font-size: 14.4px;
+}
+
+.phone-input-group .phone-number-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.phone-input-group .country-code-select.is-invalid,
+.was-validated .phone-input-group .country-code-select:invalid {
+    border-color: var(--bs-form-invalid-border-color, #dc3545);
+}
+
 @media (max-width: 1199.98px) {
     .contact-form-section .r-container {
         max-width: 100%;

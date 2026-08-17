@@ -118,11 +118,6 @@
             <div class="r-container h-100 position-relative" style="z-index: 2;">
                 <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3" style="max-width: 895px;">
                     <h2 class="font-1 m-0 text-white fw-bold">Contact Us</h2>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-                        </ol>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -239,9 +234,28 @@
                                         </div>
                                     </div>
                                     <div class="col mb-3">
-                                        <input type="tel" class="form-control py-3 px-4 rounded-3" name="phone" id="phone" placeholder="Phone" required minlength="10" pattern="[\d\s\-+().]{10,}">
+                                        <div class="phone-input-group">
+                                            <select class="form-select country-code-select py-3 px-3 rounded-3" name="country_code" id="country_code" aria-label="Country code" required>
+                                                <option value="+1" selected>+1 (US)</option>
+                                                <option value="+91">+91 (IN)</option>
+                                                <option value="+44">+44 (UK)</option>
+                                                <option value="+61">+61 (AU)</option>
+                                                <option value="+971">+971 (UAE)</option>
+                                                <option value="+65">+65 (SG)</option>
+                                                <option value="+49">+49 (DE)</option>
+                                                <option value="+33">+33 (FR)</option>
+                                                <option value="+86">+86 (CN)</option>
+                                                <option value="+81">+81 (JP)</option>
+                                                <option value="+92">+92 (PK)</option>
+                                                <option value="+880">+880 (BD)</option>
+                                                <option value="+94">+94 (LK)</option>
+                                                <option value="+977">+977 (NP)</option>
+                                            </select>
+                                            <input type="tel" class="form-control phone-number-input py-3 px-4 rounded-3" name="phone" id="phone" placeholder="Mobile Number" required inputmode="numeric" autocomplete="tel-national" maxlength="10">
+                                        </div>
+                                        <input type="hidden" name="full_phone" id="full_phone">
                                         <div class="invalid-feedback">
-                                            Please enter a valid phone number (at least 10 digits).
+                                            Please enter a valid mobile number for the selected country.
                                         </div>
                                     </div>
                                 </div>

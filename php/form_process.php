@@ -20,7 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $name = $_POST['name'];
         $email = $_POST["email"];
         $message = $_POST["message"];
-        $phone = "Phone";
+        $countryCode = isset($_POST['country_code']) ? $_POST['country_code'] : '';
+        $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+        $fullPhone = isset($_POST['full_phone']) ? $_POST['full_phone'] : trim($countryCode . $phone);
         $subject = "Subject Email"; // Replace your Subject Here
 
         $to = "recipient@example.com"; // Replace your Email Here
@@ -28,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-type: text/html\r\n";
 
-        $messageBody = "Name: $name<br>Email: $email<br>Message: $message";
+        $messageBody = "Name: $name<br>Email: $email<br>Phone: $fullPhone<br>Message: $message";
 
         if (mail($to, $subject, $messageBody, $headers)) {
             echo "success"; // Send response Success
